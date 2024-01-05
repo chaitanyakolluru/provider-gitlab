@@ -30,6 +30,11 @@ func (mg *AccessToken) GetDeletionPolicy() xpv1.DeletionPolicy {
 	return mg.Spec.DeletionPolicy
 }
 
+// GetManagementPolicies of this AccessToken.
+func (mg *AccessToken) GetManagementPolicies() xpv1.ManagementPolicies {
+	return mg.Spec.ManagementPolicies
+}
+
 // GetProviderConfigReference of this AccessToken.
 func (mg *AccessToken) GetProviderConfigReference() *xpv1.Reference {
 	return mg.Spec.ProviderConfigReference
@@ -54,6 +59,11 @@ func (mg *AccessToken) SetConditions(c ...xpv1.Condition) {
 // SetDeletionPolicy of this AccessToken.
 func (mg *AccessToken) SetDeletionPolicy(r xpv1.DeletionPolicy) {
 	mg.Spec.DeletionPolicy = r
+}
+
+// SetManagementPolicies of this AccessToken.
+func (mg *AccessToken) SetManagementPolicies(r xpv1.ManagementPolicies) {
+	mg.Spec.ManagementPolicies = r
 }
 
 // SetProviderConfigReference of this AccessToken.
@@ -82,6 +92,11 @@ func (mg *DeployKey) GetDeletionPolicy() xpv1.DeletionPolicy {
 	return mg.Spec.DeletionPolicy
 }
 
+// GetManagementPolicies of this DeployKey.
+func (mg *DeployKey) GetManagementPolicies() xpv1.ManagementPolicies {
+	return mg.Spec.ManagementPolicies
+}
+
 // GetProviderConfigReference of this DeployKey.
 func (mg *DeployKey) GetProviderConfigReference() *xpv1.Reference {
 	return mg.Spec.ProviderConfigReference
@@ -105,6 +120,11 @@ func (mg *DeployKey) SetConditions(c ...xpv1.Condition) {
 // SetDeletionPolicy of this DeployKey.
 func (mg *DeployKey) SetDeletionPolicy(r xpv1.DeletionPolicy) {
 	mg.Spec.DeletionPolicy = r
+}
+
+// SetManagementPolicies of this DeployKey.
+func (mg *DeployKey) SetManagementPolicies(r xpv1.ManagementPolicies) {
+	mg.Spec.ManagementPolicies = r
 }
 
 // SetProviderConfigReference of this DeployKey.
@@ -316,6 +336,11 @@ func (mg *PipelineSchedule) GetDeletionPolicy() xpv1.DeletionPolicy {
 	return mg.Spec.DeletionPolicy
 }
 
+// GetManagementPolicies of this PipelineSchedule.
+func (mg *PipelineSchedule) GetManagementPolicies() xpv1.ManagementPolicies {
+	return mg.Spec.ManagementPolicies
+}
+
 // GetProviderConfigReference of this PipelineSchedule.
 func (mg *PipelineSchedule) GetProviderConfigReference() *xpv1.Reference {
 	return mg.Spec.ProviderConfigReference
@@ -340,6 +365,11 @@ func (mg *PipelineSchedule) SetConditions(c ...xpv1.Condition) {
 // SetDeletionPolicy of this PipelineSchedule.
 func (mg *PipelineSchedule) SetDeletionPolicy(r xpv1.DeletionPolicy) {
 	mg.Spec.DeletionPolicy = r
+}
+
+// SetManagementPolicies of this PipelineSchedule.
+func (mg *PipelineSchedule) SetManagementPolicies(r xpv1.ManagementPolicies) {
+	mg.Spec.ManagementPolicies = r
 }
 
 // SetProviderConfigReference of this PipelineSchedule.
